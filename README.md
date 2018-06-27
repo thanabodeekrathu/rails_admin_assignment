@@ -1,24 +1,26 @@
-# README
+# Rails Admin Assignment
+--
+### Models
+  1. **Organization**
+      * name[require]
+  2. **User**
+      * **Use devise fields** [https://github.com/plataformatec/devise](https://github.com/plataformatec/devise)
+      * first_name [required]
+      * last_name [required]
+  3. **Project**
+      * name[require]
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Associations
 
-Things you may want to cover:
+![rails admin assignment](https://firebasestorage.googleapis.com/v0/b/memony-39347.appspot.com/o/Screenshot%202018-06-27%2011.04.54.png?alt=media&token=78f0ea69-cf7f-4d04-8864-fb6dc7a43c81)
 
-* Ruby version
+### Custom fields
 
-* System dependencies
+1. User
+   * Show [id, first name, lastname, email]
+   * Edit [first name, last name, email, password, password confirmation]
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Authentication by Devise
+* [https://github.com/sferik/rails_admin/wiki/Devise
+](https://github.com/sferik/rails_admin/wiki/Devise
+)
