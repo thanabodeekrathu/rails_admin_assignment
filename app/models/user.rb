@@ -7,4 +7,23 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  rails_admin do
+    list do
+      field :id
+      field :first_name
+      field :last_name
+      field :email
+    end
+    edit do 
+      field :first_name
+      field :last_name
+      field :email
+      field :password
+      field :password_confirmation
+      field :organization
+    end
+  end
+
+
 end
